@@ -25,10 +25,10 @@ public class No<T> {
         this.proximoNo = proximoNo;
     }
 
-    @Override
-    public String toString() {
-        return
-            "conteudo= '" + getConteudo() + "'";
-    }
+    // @Override
+    // public String toString() {
+    //     return
+    //         "conteudo= '" + getConteudo() + "'";
+    // }
 
 }
