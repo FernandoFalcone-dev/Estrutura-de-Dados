@@ -30,3 +30,9 @@ Ex.: Se `NumObj num1 = new NumObj();` e `NumObj num2 = num1;` então ambos os ob
 É um espaço em memória que armazena tanto o dado que queremos quanto uma referência para um próximo nó.  
 
 ![Conceito de nó](img/no.png)  
+
+#### Linked List  
+
+Podemos dizer que é uma coleção de nós que juntos representam uma sequência. Nessa estrutura, um nó sempre irá apontar para o próximo, baseado em sua referência, e quando não houver próximo nó, será apontado para null (uma referência nula).
+
+![Lista encadeada](img/lista-encadeada.png)  
