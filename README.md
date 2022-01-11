@@ -31,12 +31,6 @@ Ex.: Se `NumObj num1 = new NumObj();` e `NumObj num2 = num1;` então ambos os ob
 
 ![Conceito de nó](img/no.png)  
 
-#### Lista ligada (Linked List)  
-
-Podemos dizer que é uma coleção de nós que juntos representam uma sequência. Nessa estrutura, um nó sempre irá apontar para o próximo, baseado em sua referência, e quando não houver próximo nó, será apontado para null (uma referência nula).
-
-![Lista encadeada](img/lista-encadeada.png)  
-
 #### Pilha (Stack)  
 
 É um tipo de estrutura de dados linear que segue um esquema particular de ordenação chamado *last in, first out (LIFO)*. Dessa forma, nós inserimos e removemos elementos do topo da pilha. Se quisermos ter acesso a um elemento no meio, devemos remover os elementos que estão em cima dele.  
@@ -71,4 +65,20 @@ Exs.:
 |:-----------------:|:------------------------------------:|
 | enqueue(elemento) |  adiciona um elemento no fim da fila |
 |     dequeue()     | remove um elemento do início da fila |
-|     isEmpty()     |      checa se a fila está vazia      |
+|     isEmpty()     |      checa se a fila está vazia      |  
+
+#### Lista encadeada (Linked List)  
+
+É uma estrutura de dados linear e dinâmica. Podemos dizer que é uma coleção de nós que juntos representam uma sequência. Nessa estrutura, um nó sempre irá apontar para o próximo, baseado em sua referência, e quando não houver próximo nó, será apontado para null (uma referência nula).
+
+![Lista encadeada](img/lista-encadeada.png)  
+
+**As principais operações são:**  
+
+|    Operação   |                  Descrição                  |
+|:-------------:|:-------------------------------------------:|
+| add(elemento) |        adiciona um elemento na lista        |
+| remove(index) | remove um elemento de um determinado índice |
+|   isEmpty()   |          checa se a fila está vazia         |
+|   get(index)  |   busca um elemento de determinado índice   |
+|     size()    |        retorna o tamanho de uma lista       |
