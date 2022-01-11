@@ -1,34 +1,34 @@
 
 public class No<T> {
     // Utiliza T genérico para indicar que o conteúdo poderá ser de qualquer tipo
-    private T conteudo; 
-    private No<T> proximoNo;
+    private T dado; 
+    private No<T> refNo;
 
-    public No(T conteudo) {
-        this.conteudo = conteudo;
-        this.proximoNo = null;
+    public No(T dado) {
+        this.dado = dado;
+        this.refNo = null;
     }
 
-    public T getConteudo() {
-        return this.conteudo;
+    public T getDado() {
+        return this.dado;
     }
 
-    public void setConteudo(T conteudo) {
-        this.conteudo = conteudo;
+    public void setDado(T dado) {
+        this.dado = dado;
     }
 
-    public No<T> getProximoNo() {
-        return this.proximoNo;
+    public No<T> getRefNo() {
+        return this.refNo;
     }
 
-    public void setProximoNo(No<T> proximoNo) {
-        this.proximoNo = proximoNo;
+    public void setRefNo(No<T> refNo) {
+        this.refNo = refNo;
     }
 
     @Override
     public String toString() {
         return
-            "conteudo= '" + getConteudo() + "'";
+            "dado = '" + getDado() + "'";
     }
 
 }
