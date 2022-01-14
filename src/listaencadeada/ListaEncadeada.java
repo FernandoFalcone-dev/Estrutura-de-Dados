@@ -1,4 +1,4 @@
-package listas;
+package listaencadeada;
 
 public class ListaEncadeada<T> {
     private No<T> referenciaEntrada;

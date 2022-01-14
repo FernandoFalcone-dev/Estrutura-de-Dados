@@ -82,3 +82,11 @@ Exs.:
 |   isEmpty()   |          checa se a fila está vazia         |
 |   get(index)  |   busca um elemento de determinado índice   |
 |     size()    |        retorna o tamanho de uma lista       |
+
+#### Lista duplamente encadeada (Doubly linked list)
+
+É uma variação da lista encadeada. Neste tipo de estrutura, cada nó contém duas referências, onde uma aponta para o nó posterior e a outra para o nó anterior. Em adição a isso teremos as referências do fim e do começo, caso não tenhamos, os nós apontarão para **null**.  
+
+![Lista Duplamente Encadeada](img/lista-duplamente-encadeada.png)
+
+Obs.: Uma das vantagens em comparação a lista ligada simples, é que a dupla pode ser percorrida nas duas direções. Tornando assim as operações de inserção e deleção mais fáceis de performar.

@@ -1,4 +1,4 @@
-package listas;
+package listaencadeada;
 
 public class No<T> {
     private T dado;

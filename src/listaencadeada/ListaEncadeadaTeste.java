@@ -1,4 +1,4 @@
-package listas;
+package listaencadeada;
 
 public class ListaEncadeadaTeste {
     public static void main(String[] args) {
