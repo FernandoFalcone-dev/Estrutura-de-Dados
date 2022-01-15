@@ -1,5 +1,7 @@
 package listaencadeada;
 
+import no.No;
+
 public class ListaEncadeada<T> {
     private No<T> referenciaEntrada;
 

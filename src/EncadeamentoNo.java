@@ -1,3 +1,5 @@
+
+
 public class EncadeamentoNo {
     public static void main(String[] args) {
         No<String> no1 = new No<>("Primeiro no"); // Os diamonds vazios subentendem o tipo que foi dado

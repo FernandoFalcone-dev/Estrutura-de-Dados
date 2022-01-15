@@ -1,5 +1,7 @@
 package listaduplamenteencadeada;
 
+import no.NoDuplo;
+
 public class ListaDuplamenteEncadeada<T> {
     private NoDuplo<T> primeiroNo;
     private NoDuplo<T> ultimoNo;
@@ -86,4 +88,20 @@ public class ListaDuplamenteEncadeada<T> {
     
         return noAuxiliar;
     }
+
+
+    @Override
+    public String toString() {
+       String strRetorno = "";
+
+       NoDuplo<T> noAuxiliar = primeiroNo;
+       for (int i = 0; i < this.size(); i++) {
+           strRetorno += "[No{dado = " + noAuxiliar.getDado() + "}]--->";
+           noAuxiliar = noAuxiliar.getNoPosterior();
+       }
+       strRetorno += "null";
+
+       return strRetorno;
+    }
+
 }

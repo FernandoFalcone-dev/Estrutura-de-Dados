@@ -1,5 +1,7 @@
+package fila;
 
- 
+import no.No;
+
 public class Fila<T> {
     private No<T> refNoEntradaFila;
 
@@ -9,7 +11,7 @@ public class Fila<T> {
 
     public void enqueue(T object) {
         No<T> novoNo = new No<>(object);
-        novoNo.setRefNo(refNoEntradaFila);
+        novoNo.setProximoNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
@@ -17,8 +19,8 @@ public class Fila<T> {
         if (!this.isEmpty()) {
             No<T> primeiroNo = refNoEntradaFila;
             while (true) {
-                if (primeiroNo.getRefNo() != null) {
-                    primeiroNo = primeiroNo.getRefNo();
+                if (primeiroNo.getProximoNo() != null) {
+                    primeiroNo = primeiroNo.getProximoNo();
                 } else {
                     break;
                 }
@@ -33,11 +35,11 @@ public class Fila<T> {
             No<T> primeiroNo = refNoEntradaFila;
             No<T> noAuxiliar = refNoEntradaFila;
             while (true) {
-                if (primeiroNo.getRefNo() != null) {
+                if (primeiroNo.getProximoNo() != null) {
                     noAuxiliar = primeiroNo;
-                    primeiroNo = primeiroNo.getRefNo();
+                    primeiroNo = primeiroNo.getProximoNo();
                 } else {
-                    noAuxiliar.setRefNo(null);
+                    noAuxiliar.setProximoNo(null);
                     break;
                 }
             }
@@ -58,8 +60,8 @@ public class Fila<T> {
         if (refNoEntradaFila != null) {
             while (true) {
                 stringRetorno += "[No{objeto=" + noAuxiliar.getDado() + "}]--->";
-                if (noAuxiliar.getRefNo() != null) {
-                    noAuxiliar = noAuxiliar.getRefNo();
+                if (noAuxiliar.getProximoNo() != null) {
+                    noAuxiliar = noAuxiliar.getProximoNo();
                 } else {
                     stringRetorno += "null";
                     break;

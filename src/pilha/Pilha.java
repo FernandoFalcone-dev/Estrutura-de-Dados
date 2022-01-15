@@ -1,4 +1,6 @@
+package pilha;
 
+import no.No;
 
 public class Pilha<T> {
     private No<T> refNoEntradaPilha;
@@ -11,13 +13,13 @@ public class Pilha<T> {
         No<T> novoNo = new No<>(object);
         No<T> refAuxiliar = refNoEntradaPilha; // guarda a referência do nó anterior
         refNoEntradaPilha = novoNo; // recebe o novo nó
-        refNoEntradaPilha.setRefNo(refAuxiliar); // faz referência ao nó de baixo
+        refNoEntradaPilha.setProximoNo(refAuxiliar); // faz referência ao nó de baixo
     }
 
     public No<T> pop(){
         if (!this.isEmpty()) {
             No<T> noRetirado = refNoEntradaPilha; // guarda a referência do nó retirado
-            refNoEntradaPilha = refNoEntradaPilha.getRefNo(); // recebe a referência do nó de baixo
+            refNoEntradaPilha = refNoEntradaPilha.getProximoNo(); // recebe a referência do nó de baixo
             return noRetirado; // retorna o nó retirado
         }
         return null;
@@ -43,7 +45,7 @@ public class Pilha<T> {
         while (true) {
             if (noAuxiliar != null) {
                 stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";
-                noAuxiliar = noAuxiliar.getRefNo();
+                noAuxiliar = noAuxiliar.getProximoNo();
             } 
             else break;
         }
