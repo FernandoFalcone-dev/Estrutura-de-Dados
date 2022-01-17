@@ -88,5 +88,24 @@ Exs.:
 É uma variação da lista encadeada. Neste tipo de estrutura, cada nó contém duas referências, onde uma aponta para o nó posterior e a outra para o nó anterior. Em adição a isso teremos as referências do fim e do começo, caso não tenhamos, os nós apontarão para **null**.  
 
 ![Lista Duplamente Encadeada](img/lista-duplamente-encadeada.png)
+  
 
-Obs.: Uma das vantagens em comparação a lista ligada simples, é que a dupla pode ser percorrida nas duas direções. Tornando assim as operações de inserção e deleção mais fáceis de performar.
+**As principais operações são:**  
+
+|       Operação       |                  Descrição                  |
+|:--------------------:|:-------------------------------------------:|
+|     add(elemento)    |        adiciona um elemento na lista        |
+| add(index, elemento) |  adiciona um elemento em determinado índice |
+|     remove(index)    | remove um elemento de um determinado índice |
+|       isEmpty()      |          checa se a fila está vazia         |
+|      get(index)      |   busca um elemento de determinado índice   |
+|        size()        |        retorna o tamanho de uma lista       |
+
+#### Lista encadeada Vs Lista duplamente encadeada
+
+|                                          |                       Lista encadeada                      |                                  Lista duplamente encadeada                                 |
+|:----------------------------------------:|:----------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+| **Número de referências (ou ponteiros)** |        Contém apenas 1 que aponta para o próximo nó        | Contém 2, uma que aponta para o nó anterior e a outra que aponta para o próximo nó da lista |
+|          **Percorrendo a lista**         |                Permite apenas em uma direção               |                     Permite nas duas direções (para trás e para frente)                     |
+|      **Memória para armazenamento**      | Requer menos memória já que apenas armazena uma referência |                      Requer mais memória, já que armazena 2 referências                     |
+|  **Complexidade de inserção e deleção**  |       Para uma posição dada, a complexidade é de O(n)      |                       Para uma posição dada, a complexidade é de O(1)                       |
