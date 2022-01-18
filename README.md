@@ -109,3 +109,17 @@ Exs.:
 |          **Percorrendo a lista**         |                Permite apenas em uma direção               |                     Permite nas duas direções (para trás e para frente)                     |
 |      **Memória para armazenamento**      | Requer menos memória já que apenas armazena uma referência |                      Requer mais memória, já que armazena 2 referências                     |
 |  **Complexidade de inserção e deleção**  |       Para uma posição dada, a complexidade é de O(n)      |                       Para uma posição dada, a complexidade é de O(1)                       |
+  
+#### Lista Circular  
+
+O que diferencia esse tipo de lista dos outros, é que ao percorrermos ela a partir do início, em algum momento ela retornará ao início. Isso se deve porque quando chegamos ao último nó, este irá apontar para o primeiro, formando assim um círculo.
+
+**As principais operações são:**  
+
+|    Operação   |                 Descrição                |
+|:-------------:|:----------------------------------------:|
+| add(elemento) |       Adiciona um elemento na lista      |
+| remove(index) | Remove um elemento de determinado índice |
+|     size()    |        Retorna o tamanho da lista        |
+|   isEmpty()   |       Retorna se a lista está vazia      |
+|     get()     |  Busca um elemento de determinado índice |
